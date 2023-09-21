@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: skyblue;
+}
+
+.currencyConverter {
+  box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+ 
+  
+}
+
+.currencyConverter > .title {
+  display: flex;
+  align-items: center;
+}
+
+.title > ion-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  color: #888843;
+}
+
+.title > h1 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#converter > div {
+  display: flex;
+  flex-direction: column;
+  margin: 6px 0;
+}
+
+#converter > div label {
+  font-size: 12px;
+  font-weight: 900;
+  margin: 6px 0;
+}
+
+#converter > div input,
+#converter > div select {
+  border: 1px solid rgb(210, 207, 207);
+  padding: 12px;
+  box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+#converter > button {
+  width: 100%;
+  background-color: #888843;
+  color: white;
+  border: 0;
+  margin: 6px 0;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.currencyConverter > #result {
+  width: 100%;
+  margin: 20px 0;
+  font-weight: 900;
+}
+
+#result.error {
+  color: red;
+  padding: 20px;
+}
